@@ -1,0 +1,299 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body{
+    background-color: #C6C1FF;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    height: 243vh;
+    width: 100%;
+    margin: 0;
+}
+
+.img-logo{
+    width: 4%;
+}
+
+.container-navbar{
+    width: 100%;
+    height: 13vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.ul-navbar{
+    display: flex;
+    height: 100px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.a-navbar{
+    color: black;
+    text-decoration: none;
+}
+
+.li-navbar{
+    list-style-type: none;
+    font-size: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 120px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Tampilkan dropdown saat mengarahkan kursor mouse ke menu dropdown */
+}
+
+.li-navbar-masuk{
+    border: 2px solid black;
+    list-style-type: none;
+    font-size: 20px;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.a-perusahaan{
+    text-decoration: none;
+    color: blue;
+}
+
+.li-navbar-masuk:hover{
+    background-color: #cffbf3;
+    transition: .2s ease-in-out;
+    transition-delay: .1s;
+    border-radius: 15px;
+}
+
+.ul-kanan{
+    display: flex;
+    position: absolute;
+    left: 1000px;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+}
+
+.top {
+    width: 100vw; 
+    height: 50vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom{
+    width: 100vw; 
+    height: 85vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    position: relative;
+}
+
+.bottom{
+    position: relative;
+    z-index: 1;
+}
+
+.txt-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.HEADER-TOP{
+    color: white; 
+    font-size: 70px; 
+    font-weight: bold; 
+    text-align: center;
+    width: 100%;
+}
+
+.image{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.image-bottom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    z-index: 1; 
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3cm;
+    flex-grow: 1;
+    padding: 0 40px;
+}
+
+.container-bottom {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 100%; 
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+
+.JUDUL{
+    color: #393288;
+    font-size: 60px;
+}
+
+.Header1{
+    color: #393288;
+    font-size: 40px;
+}
+
+h1, p{
+    color: #F2F1FF;
+}
+
+.SATU, .DUA, .TIGA{
+    font-size: 24px;
+}
+
+.div1, .div2, .div3{
+    transition: transform 0.3s ease;
+    width: 20em;
+    height: 18em;
+    background-color: #594BFF;
+    box-shadow: 5px 5px 25px #0000005f;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-bottom: -20vh;
+}
+
+.div1:hover, .div2:hover, .div3:hover{
+    transform: scale(1.1);
+}
+
+.div4{
+    width: 25em;
+    height: 25em;
+    background-color: #F2F1FF;
+    box-shadow: 5px 5px 25px #0000005f;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.img1, .img2, .img3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-top: 40px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.click{
+    width: 10vw;
+    height: 8vh;
+    border-radius: 10px;
+    color: #F2F1FF;
+    background-color: #393288;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.click-bottom{
+    width: 26vw;
+    height: 6vh;
+    border-radius: 10px;
+    color: #F2F1FF;
+    background-color: #393288;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.garis{
+    border: 1px solid #2E107B;
+    width: 26vw;
+    height: 0;
+}
+
+.form-email{
+    width: 26vw;
+}
+
+input[type="email"]{
+    width: 25vw;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #2E107B;
+    background-color: transparent;
+}
+
+.click-bottom2{
+    background-color: transparent;
+    color: #2E107B;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+
+@media(max-width: 1200px){
+    .container{
+        height: 100%;
+        flex-direction: column;
+    }
+    .div1, .div2, .div3{
+        max-width: 80%;
+        padding: 50px 30px;
+    }
+    .h1{
+        margin: 0;
+    }
+    .h2{
+        font-size: 3rem;
+        margin: 1.5rem;
+    }
+}
