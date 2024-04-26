@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job findernya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <div class="container-navbar">
+        <ul class="ul-navbar">
+            <li class="li-navbar li-navbar-gambar">
+                <img src="models/logo 3.png" alt="" class="img-logo">
+            </li>
+            <li class="li-navbar">
+                <a href="#" class="a-navbar">Cari Lowongan</a>
+            </li>
+            <li class="li-navbar">
+                <a href="#" class="a-navbar">Lihat Profil</a>
+            </li>
+            <li class="li-navbar">
+                <a href="./saran_karir/saran_karir.html" class="a-navbar">Sumber Daya Karir</a>
+            </li>
+            <li class="li-navbar">
+                <a href="#" class="a-navbar">Profil Perusahaan</a>
+            </li>
+            <ul class="ul-kanan">
+                <li class="li-navbar dropdown">
+                    <a href="#" class="a-navbar">🌐 Bahasa</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#" class="a-navbar-kanan">Indonesia</a></li>
+                        <li><a href="#" class="a-navbar-kanan">Jawa</a></li>
+                    </ul>
+                </li>
+                <li class="li-navbar">
+                    <a href="/loginpage/main.html" class="a-navbar">Masuk</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="#" class="a-perusahaan">Untuk Perusahaan</a>
+                </li>
+            </ul>
+        </ul>
+    </div>
+    <!-- akhir navbar -->
+
+    <!-- content -->
+    <div class="container-content">
+        <div class="grid-kiri">
+            <ul class="ul-kiri">
+                <h1 class="h1-grid-kiri">Filters</h1>
+                <p class="p-grid-kiri"><b>Location</b></p>
+                <div class="opsi-grid-kiri">
+                    <input type="radio" name="opsi" id="nearMe" value="nearMe">
+                    <label for="nearMe">Near Me</label>
+                </div>
+                <div class="opsi-grid-kiri">
+                    <input type="radio" name="opsi" id="exactLocation" value="remoteJob">
+                    <label for="exactLocation">Remote Job</label>
+                </div>
+                <div class="opsi-grid-kiri">
+                    <input type="radio" name="opsi" id="within15km" value="within15km">
+                    <label for="within15km">Within 15 km</label>
+                </div>
+                <div class="opsi-grid-kiri">
+                    <input type="radio" name="opsi" id="within30km" value="within30km">
+                    <label for="within30km">Within 30 km</label>
+                </div>
+                <div class="opsi-grid-kiri">
+                    <input type="radio" name="opsi" id="within50km" value="within50km">
+                    <label for="within50km">Within 50 km</label>
+                </div>
+                <p class="p-grid-kiri"><b>Salary</b></p>
+                <div class="opsi-grid-kiri">
+                    <input type="radio" name="salary" id="any" value="any">
+                    <label for="any">any</label>
+                </div>
+                <div class="opsi-grid-kiri">
+                    <input type="radio" name="salary" id=">30000k" value=">30000k">
+                    <label for=">30000k">>30000k</label>
+                </div>
+                <div class="opsi-grid-kiri">
+                    <input type="radio" name="salary" id=">50000k" value=">50000k">
+                    <label for=">50000k">>50000k</label>
+                </div>
+                <div class="opsi-grid-kiri">
+                    <input type="radio" name="salary" id=">80000k" value=">80000k">
+                    <label for=">80000k">>80000k</label>
+                </div>
+                <div class="opsi-grid-kiri">
+                    <input type="radio" name="salary" id=">100000k" value=">100000k">
+                    <label for=">100000k">>50000k</label>
+                </div>
+                <p class="p-grid-kiri"><b>Date of posting</b></p>
+                <div class="opsi-grid-kiri">
+                    <input type="radio" name="dop" id="allTime" value="allTime">
+                    <label for="allTime">allTime</label>
+                </div>
+                <div class="opsi-grid-kiri">
+                    <input type="radio" name="dop" id="last24Hour" value="last24Hour">
+                    <label for="last24Hour">last24Hour</label>
+                </div>
+                <div class="opsi-grid-kiri">
+                    <input type="radio" name="dop" id="last3Days" value="last3Days">
+                    <label for="last3Days">last3Days</label>
+                </div>
+                <div class="opsi-grid-kiri">
+                    <input type="radio" name="dop" id="last7Days" value="last7Days">
+                    <label for="last7Days">last7Days</label>
+                </div>
+                <p class="p-grid-kiri"><b>Work experience</b></p>
+                <div class="opsi-grid-kiri">
+                    <input type="radio" name="we" id="anyexp" value="anyexp">
+                    <label for="anyexp">Any experience</label>
+                </div>
+                <div class="opsi-grid-kiri">
+                    <input type="radio" name="we" id="internship" value="internship">
+                    <label for="internship">Internship</label>
+                </div>
+                <div class="opsi-grid-kiri">
+                    <input type="radio" name="we" id="workRemote" value="workRemote">
+                    <label for="anyexp">Work remote</label>
+                </div>
+                <p class="p-grid-kiri"><b>Type of employement</b></p>
+                <div class="checkbox-grid-kiri">
+                    <input type="checkbox" id="full-time" name="toe" value="full-time">
+                    <label for="toe">Full-time</label>
+                </div>
+                <div class="checkbox-grid-kiri">
+                    <input type="checkbox" id="temporary" name="toe" value="temporary">
+                    <label for="toe">Temporary</label>
+                </div>
+                <div class="checkbox-grid-kiri">
+                    <input type="checkbox" id="part-time" name="toe" value="part-time">
+                    <label for="toe">Part-time</label>
+                </div>
+            </ul>
+
+        </div>
+        <div class="grid-tengah">
+            <ul class="ul-grid-tengah">
+                
+                <!-- list 1 -->
+                <li class="li-grid-tengah">
+                    <div class="container-list">
+                        <div class="container-grid-kiri">
+                            <img src="models/download (4).png" alt="" class="img-list">
+                        </div>
+                        <div class="container-grid-kanan">
+                            <p class="p-list">Notion</p>
+                            <h1 class="h1-list">Junior UI Designer</h1>
+                            <ul class="ul-lokasi">
+                                <li class="li-lokasi">
+                                    <img src="models/location.png" alt="" class="img-li"> Jakarta
+                                </li>
+                                <li class="li-lokasi">
+                                    <img src="models/clock.png" alt="" class="img-li"> Kontrak
+                                </li>
+                                <li class="li-lokasi">
+                                    <p class="p-list">Rp. 6 - 8 juta</p>
+                                </li>
+                                <li class="li-lokasi">
+                                    <img src="models/calender.png" alt="" class="img-calender"> 1 hari lalu
+                                </li>
+                            </ul>
+                            <div class="lamar">
+                                <a href="joblist_1.html" class="a-lamar">Lamar Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- list 1 beres -->
+
+                <!-- list 2 awal -->
+                <li class="li-grid-tengah">
+                    <div class="container-list">
+                        <div class="container-grid-kiri">
+                            <img src="models/google2.png" alt="" class="img-list">
+                        </div>
+                        <div class="container-grid-kanan">
+                            <p class="p-list">Google</p>
+                            <h1 class="h1-list">Product Designer</h1>
+                            <ul class="ul-lokasi">
+                                <li class="li-lokasi">
+                                    <img src="models/location.png" alt="" class="img-li"> Bogor
+                                </li>
+                                <li class="li-lokasi">
+                                    <img src="models/clock.png" alt="" class="img-li"> Full-time
+                                </li>
+                                <li class="li-lokasi">
+                                    <p class="p-list">Rp. 6 - 10 juta</p>
+                                </li>
+                                <li class="li-lokasi">
+                                    <img src="models/calender.png" alt="" class="img-calender"> 2 hari lalu
+                                </li>
+                            </ul>
+                            <div class="lamar">
+                                <a href="joblist_2.html" class="a-lamar">Lamar Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- list 2 beres -->
+
+                <!-- list 3 awal -->
+                <li class="li-grid-tengah">
+                    <div class="container-list">
+                        <div class="container-grid-kiri">
+                            <img src="models/ripple.png" alt="" class="img-list">
+                        </div>
+                        <div class="container-grid-kanan">
+                            <p class="p-list">Tokopedia</p>
+                            <h1 class="h1-list">Technical Support Engineer</h1>
+                            <ul class="ul-lokasi">
+                                <li class="li-lokasi">
+                                    <img src="models/location.png" alt="" class="img-li"> Surabaya
+                                </li>
+                                <li class="li-lokasi">
+                                    <img src="models/clock.png" alt="" class="img-li"> Kontrak
+                                </li>
+                                <li class="li-lokasi">
+                                    <p class="p-list">Rp. 9 - 10 juta</p>
+                                </li>
+                                <li class="li-lokasi">
+                                    <img src="models/calender.png" alt="" class="img-calender"> 1 hari lalu
+                                </li>
+                            </ul>
+                            <div class="lamar">
+                                <a href="" class="a-lamar">Lamar Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- list 3 beres -->
+
+                <!-- list 4 awal -->
+                <li class="li-grid-tengah">
+                    <div class="container-list">
+                        <div class="container-grid-kiri">
+                            <img src="models/bitget.png" alt="" class="img-list">
+                        </div>
+                        <div class="container-grid-kanan">
+                            <p class="p-list">Bitget</p>
+                            <h1 class="h1-list">Software Engineer</h1>
+                            
+                            <ul class="ul-lokasi">
+                                <li class="li-lokasi">
+                                    <img src="models/location.png" alt="" class="img-li"> Bandung
+                                </li>
+                                <li class="li-lokasi">
+                                    <img src="models/clock.png" alt="" class="img-li"> Full-time
+                                </li>
+                                <li class="li-lokasi">
+                                    <p class="p-list">Rp. 9 - 10 juta</p>
+                                </li>
+                                <li class="li-lokasi">
+                                    <img src="models/calender.png" alt="" class="img-calender"> 4 hari lalu
+                                </li>
+                            </ul>
+                            <div class="lamar">
+                                <a href="" class="a-lamar">Lamar Sekarang</a>
+                            </div>
+                            <div class="new-post">
+                                <p class="p-new-post">New Post</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- list 4 beres -->
+
+                <!-- list 5 awal -->
+                <li class="li-grid-tengah">
+                    <div class="container-list">
+                        <div class="container-grid-kiri">
+                            <img src="models/microsoft.png" alt="" class="img-list">
+                        </div>
+                        <div class="container-grid-kanan">
+                            <p class="p-list">Microsoft</p>
+                            <h1 class="h1-list">Senior UI/UX Designer</h1>
+                            
+                            <ul class="ul-lokasi">
+                                <li class="li-lokasi">
+                                    <img src="models/location.png" alt="" class="img-li"> NTT
+                                </li>
+                                <li class="li-lokasi">
+                                    <img src="models/clock.png" alt="" class="img-li"> Full-time
+                                </li>
+                                <li class="li-lokasi">
+                                    <p class="p-list">Rp. 21 - 22 juta</p>
+                                </li>
+                                <li class="li-lokasi">
+                                    <img src="models/calender.png" alt="" class="img-calender"> 4 hari lalu
+                                </li>
+                            </ul>
+                            <div class="lamar">
+                                <a href="" class="a-lamar">Lamar Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- list 5 beres -->
+
+                <!-- list 6 awal -->
+                <li class="li-grid-tengah">
+                    <div class="container-list">
+                        <div class="container-grid-kiri">
+                            <img src="models/ondo.jpeg" alt="" class="img-list">
+                        </div>
+                        <div class="container-grid-kanan">
+                            <p class="p-list">Ondo Finance</p>
+                            <h1 class="h1-list">Blockchain Developer</h1>
+                            
+                            <ul class="ul-lokasi">
+                                <li class="li-lokasi">
+                                    <img src="models/location.png" alt="" class="img-li"> NTB
+                                </li>
+                                <li class="li-lokasi">
+                                    <img src="models/clock.png" alt="" class="img-li"> Full-time
+                                </li>
+                                <li class="li-lokasi">
+                                    <p class="p-list">Rp. 61 - 66 juta</p>
+                                </li>
+                                <li class="li-lokasi">
+                                    <img src="models/calender.png" alt="" class="img-calender"> 3 hari lalu
+                                </li>
+                            </ul>
+                            <div class="lamar">
+                                <a href="" class="a-lamar">Lamar Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- list 6 beres -->
+            </ul>
+            <!-- nomer halaman -->
+            <ul class="ul-halaman">
+                <li class="li-halaman">
+                    <div class="halaman-bawah">
+                        <a href="" class="halaman-bawah"><span class="arrow-kiri"></span></a>
+                    </div>
+                </li>
+                <li class="li-halaman">
+                    <div class="halaman-bawah-utama">
+                        <a href="" class="a-halaman-utama">1</span></a>
+                    </div>
+                </li>
+                <li class="li-halaman">
+                    <div class="halaman-bawah">
+                        <a href="" class="a-halaman">2</span></a>
+                    </div>
+                </li>
+                <li class="li-halaman">
+                    <div class="halaman-bawah">
+                        <a href="" class="a-halaman">3</span></a>
+                    </div>
+                </li>
+                <li class="li-halaman">
+                    <div class="halaman-bawah">
+                        <a href="" class="a-halaman">4</span></a>
+                    </div>
+                </li>
+                <li class="li-halaman">
+                    <div class="halaman-bawah">
+                        <a href="" class="a-halaman">5</span></a>
+                    </div>
+                </li>
+                <li class="li-halaman">
+                    <div class="halaman-bawah">
+                        <a href="" class="halaman-bawah"><span class="arrow-kanan"></span></a>
+                    </div>
+                </li>
+            </ul>
+            <!-- nomer halaman beres -->
+        </div>
+        <!-- grid mid beres -->
+
+        <div class="grid-kanan">
+            <ul class="ul-grid-kanan">
+                <li class="li-grid-kanan">
+                    <div class="container-gridkanan-atas">
+                        <h1 class="h1-grid-kanan">📨  Email me for jobs</h1>
+                        <p class="p-grid-kanan">Lorem ipsum dolor sit amet consectetur adipisicing elit. A consectetur esse </p>
+                        <input type="email" id="email" name="email" placeholder="name@mail.com">
+                        <div class="Subscribe-atas">
+                            <a href="" class="a-subscribe">Subscribe</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="li-grid-kanan">
+                    <div class="container-gridkanan">
+                        <h1 class="h1-grid-kanan">🚀 Get noticed faster</h1>
+                        <p class="p-grid-kanan">Lorem ipsum dolor sit amet consectetur adipisicing elit. A consectetur esse </p>
+                        <div class="Subscribe">
+                            <a href="" class="a-subscribe">Upload your resume</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- content beres -->
+</body>
+</html>

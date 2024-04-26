@@ -1,0 +1,407 @@
+*,
+html{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.img-logo{
+    width: 200%;
+}
+
+.li-navbar-gambar{
+    width: 2%;
+    list-style-type: none;
+}
+
+.container-navbar{
+    position:sticky;
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.container-navbar.scrolled {
+    top: -60px; /* Ubah nilai ini sesuai dengan tinggi navbar Anda */
+}
+
+.ul-navbar{
+    z-index: 1;
+    position: absolute;
+    left: 15px;
+    display: flex;
+    height: 100px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.a-navbar-kanan{
+    text-decoration: none;
+    color: black;
+}
+
+.a-navbar-kanan:hover{
+    text-decoration: underline;
+}
+
+.a-navbar{
+    color: black;
+    text-decoration: none;
+}
+
+.a-navbar:hover{
+    text-decoration: underline;
+}
+
+.li-navbar{
+    list-style-type: none;
+    font-size: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.li-navbar:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 120px;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Tampilkan dropdown saat mengarahkan kursor mouse ke menu dropdown */
+}
+
+.li-navbar-masuk{
+    border: 2px solid black;
+    list-style-type: none;
+    font-size: 20px;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.a-perusahaan{
+    text-decoration: none;
+    color: blue;
+}
+
+.li-navbar-masuk:hover{
+    background-color: #cffbf3;
+    transition: .2s ease-in-out;
+    transition-delay: .1s;
+    border-radius: 15px;
+}
+
+.ul-kanan{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    left: 100px;
+    height: 100px;
+}
+
+.container-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1.5fr; /* Tiga kolom dengan lebar proporsional */
+    grid-gap: 50px; /* Jarak antara grid */
+}
+
+.grid-kiri {
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.grid-tengah {
+    grid-column: 2; /* Grid tengah dimulai dari kolom kedua dan menyebar ke 2 kolom berikutnya */
+}
+
+.grid-kiri{
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.h1-grid-kiri{
+    font-size: 24px;
+    padding: 30px;
+}
+
+.p-grid-kiri{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.opsi-grid-kiri{
+    padding: 10px;
+}
+
+.checkbox-grid-kiri{
+    padding: 10px;
+}
+
+.grid-tengah{
+    height: 190vh;
+    width: 100%;
+}
+
+.ul-grid-tengah{
+    padding: 10px;
+    margin: 10px;
+}
+
+.img-li{
+    width: 10%;
+}
+
+.container-list{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 100%;
+}
+
+.img-list{
+    width: 40%;
+}
+
+.li-grid-tengah{
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.ul-lokasi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-calender{
+    width: 10%;
+}
+
+.li-lokasi{
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    list-style-type:none;
+}
+
+.container-grid-kiri{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-list{
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.container-grid-kanan{
+    position: relative;
+    top: 30px;
+}
+
+.h1-list{
+    width: 100%;
+    font-size: 30px;
+}
+
+.lamar{
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: blueviolet;
+}
+
+.lamar:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    transition-delay: 0.1s;
+}
+
+.a-lamar{
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.a-lamar:hover{
+    text-decoration: underline;
+}
+
+.new-post{
+    width: 100px;
+    background-color: #cfc3f4;
+    opacity: 80%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -100px;
+    left:280px;
+}
+
+.p-new-post{
+    color: rgb(137, 24, 243);
+    font-size: 15px;
+}
+
+.arrow-kiri {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.5' d='m17 14l-5-5m0 0l-5 5'/%3E%3C/svg%3E");
+    transform: rotate(-90deg);
+}
+
+.arrow-kanan {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.5' d='m17 14l-5-5m0 0l-5 5'/%3E%3C/svg%3E");
+    transform: rotate(90deg);
+}
+
+.halaman-bawah{
+    background-color: rgb(255, 255, 255);
+    width: 25px;
+    height: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.halaman-bawah-utama{
+    background-color: #3575E2;
+    width: 25px;
+    height: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul-halaman{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.li-halaman{
+    list-style-type: none;
+    margin-right: 25px;
+}
+
+.a-halaman{
+    text-decoration: none;
+}
+
+.a-halaman-utama{
+    text-decoration: none;
+    color: white;
+}
+
+.li-grid-kanan{
+    list-style-type: none;
+    margin-bottom: 70px;
+}
+
+.container-gridkanan{
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    width: 350px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.container-gridkanan-atas{
+    background-color: rgb(255, 255, 255);
+    height: 250px;
+    width: 350px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.h1-grid-kanan{
+    font-family: DM Sans;
+    position: relative;
+    left: 35px;
+    font-size: 20px;
+    bottom: -20px;
+    margin-bottom: 35px;
+}
+
+.p-grid-kanan{
+    font-size: 20px;
+    opacity: 50%;
+    position: relative;
+    left: 60px;
+    width: 90%;
+}
+
+.Subscribe-atas{
+    position: relative;
+    left: 50px;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    background-color: #3575E2;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.Subscribe{
+    position: relative;
+    left: 50px;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    background-color: #3575E2;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.a-subscribe{
+    text-decoration: none;
+    color: white;
+}
+
+#email{
+    position: relative;
+    left: 70px;
+    top: 10px;
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+}

@@ -1,0 +1,314 @@
+*,
+html{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+.img-logo{
+    width: 40px;
+    position:absolute;
+    margin-left:50px ;
+    margin-top: 14px;
+}
+
+.container-navbar{
+    width: 100%;
+    height: 10vh;
+    background-color:white ;
+}
+
+.a-navbar{
+    color: black;
+    text-decoration: none;
+}
+
+.ul-navbar{
+    display: flex;
+    height: 100px;
+    position: absolute;
+    margin-top:13px ;
+    margin-left: 100px;
+}
+
+.li-navbar{
+    list-style: none;
+    padding: 14px;
+    margin: 5px;
+    font-size: 17px;
+}
+
+.li-navbar-kanan{
+    list-style: none;
+    padding: 14px;
+    margin: 5px;
+    font-size: 17px;
+}
+
+.ul-navbar-kanan{
+    display: flex;
+    height: 100px;
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 1100px;
+}
+
+.a-navbar-kanan{
+    color: black;
+    text-decoration: none;
+}
+.dropdown-content {
+    display: none; 
+    position: absolute; 
+    background-color: #ffffff; 
+    min-width: 120px; 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
+    z-index: 1; 
+}
+
+.dropdown-content li {
+    padding: 12px 16px; 
+    text-decoration: none; 
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.li-navbar-kanan-masuk {
+    list-style: none;
+    height: 12px;
+    padding: 14px;
+    margin: 5px;
+    font-size: 17px;
+    border: 2px solid black;
+    border-radius: 10px; 
+}
+
+.a-masuk {
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: center; 
+}
+
+.li-navbar-kanan-masuk:hover{
+    background-color: #cffbf3;
+    transition: .5s ease-in-out;
+    transition-delay: .2s;
+    border-radius: 8px;
+}
+
+.a-navbar-perusahaan{
+    text-decoration: none;
+    color: blue;
+}
+
+.h1-content{
+    color:#000000;
+    text-align:left;
+    vertical-align:text-top;
+    font-size:60px;
+    font-family:Space Grotesk;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    width:531px;
+    position:absolute;
+    margin-top:120px ;
+    margin-left: 180px;
+}
+
+.p-content{
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 180px;
+    color:#000000;
+    text-align:left;
+    vertical-align:text-top;
+    font-size:24px;
+    font-family:Inter;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    width:498px;
+}
+
+.li-content {
+    position: absolute;
+    list-style: none;
+    height: 14px;
+    width: 180px;
+    padding: 14px;
+    margin: 5px;
+    font-size: 17px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 430px;
+    margin-left: 240px;  
+}
+
+.a-content {
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: center;
+}
+
+.li-content:hover{
+    background-color: #cffbf3;
+    transition: .5s ease-in-out;
+    transition-delay: .2s;
+    border-radius: 8px;
+}
+
+.div-logo{
+    width: 100%;
+    height: 10vh;
+    background-color:white ;
+}
+
+.img-logo-bawah{
+    width: 200px;
+}
+
+.ul-logo{
+    display: flex;
+    height: 100px;
+    position: absolute;
+    margin-top:550px ;
+    margin-left: 70px;
+}
+
+.li-logo{
+    list-style: none;
+    padding: 14px;
+    margin: 5px;
+    font-size: 17px;
+}
+
+.div-lakara{
+    width: 100%;
+    height: 40vh;
+    background-color:rgb(255, 255, 255) ;
+}
+
+.h1-lakara{
+    color:#18191c;
+    text-align:center;
+    vertical-align:text-top;
+    font-size:40px;
+    font-family:Inter;
+    line-height:48px;
+    border-style:hidden;
+    outline:none;
+    width:504px;
+    position:absolute;
+    margin-top: 650px;
+    margin-left: 500px;
+}
+
+.img-lakara{
+    position: absolute;
+    margin-top: 800px;
+    width: 100%;
+}
+
+.img-content{
+    width: 600px;
+    position: absolute;
+    margin-left: 750px;
+}
+
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    background-color: white; /* Atur warna latar belakang sesuai kebutuhan */
+    z-index: 100; /* Pastikan z-index cukup tinggi agar navbar tumpang tindih dengan konten lainnya */
+    /* Atur properti lainnya sesuai kebutuhan Anda */
+    /* Misalnya: */
+    width: 97%;
+    height: 60px; /* Atur tinggi navbar sesuai keinginan Anda */
+    padding: 0 20px; /* Atur padding kiri-kanan navbar sesuai keinginan Anda */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Atur bayangan navbar jika diperlukan */
+}
+
+.post-cv{
+    position: relative;
+    top: 800px;
+    width: 100%;
+    height: 80vh;
+    background-color:#F3F2F0 ;
+}
+
+.h1-banner{
+    color:#831c1c;
+    text-align:left;
+    vertical-align:text-top;
+    font-size:50px;
+    font-family:Ubuntu;
+    line-height:50px;
+    border-style:hidden;
+    outline:none;
+    width:565px;
+    position: relative;
+    top: 70px;
+    left: 80px;
+}
+
+.li-postcv{
+    background-color: #2F67A5;
+    position: absolute;
+    list-style: none;
+    height: 15px;
+    width: 110px;
+    padding: 14px;
+    margin: 5px;
+    font-size: 17px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-left: 1100px;  
+}
+
+.a-postcv{
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.container-footer{
+    position: absolute;
+    top: 1700px;
+    display: grid;
+    height: 30vh;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    background-color: white;
+}
+
+.img-footer{
+    width: 20%;
+}
+
+.grid1-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid2-footer{
+    position: relative;
+    top: 50px;
+}
+
+.grid3-footer{
+    position: relative;
+    top: 50px;
+}
+
+.grid4-footer{
+    position: relative;
+    top: 50px;
+}

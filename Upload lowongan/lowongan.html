@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+    <!-- navbar -->
+    <div class="navbar">
+        <ul>    
+          <li><img src="models/logo 3.png" alt="" class="img-logo"></li>
+          <li><a href="/landing_perusahaan/index.html">Beranda</a></li>
+          <li><a href="#">Buat Lowongan</a></li>
+          <li><a href="#">Saran Perekrutan</a></li>
+          <li><a href="#">Wawasan Pasar</a></li>
+        </ul>
+        <ul>
+            <li class="li-navbar dropdown">
+                <a href="#" class="a-navbar">🌐 Bahasa</a>
+                <ul class="dropdown-content">
+                    <li><a href="#" class="a-navbar-kanan">Indonesia</a></li>
+                    <li><a href="#" class="a-navbar-kanan">Jawa</a></li>
+                </ul>
+            </li>
+          <li><a href="/loginpage/main.html">Masuk </a>| <a href="#">Daftar</a></li>
+          <li><a href="#">Untuk Perusahaan</a></li>
+        </ul>
+      </div>
+    <!-- akhir navbar -->
+  <div class="bg">
+      <div class="container">
+        <h1>Posting Lowongan Pekerjaan</h1>
+        <form id="register-form">
+          <label class="title" for="pekerjaan">Nama Pekerjaan</label>
+          <input type="text" id="username" name="username" placeholder="cth: akuntan, sales, dll.">
+          
+          <label class="title" for="lokasi">Lokasi</label>
+          <input type="text" id="lokasi" name="lokasi" placeholder="cth: Jakarta Barat, Jakarta">
+          
+          <label class="title" for="durasi">Durasi Kerja</label>
+          <input type="text" id="durasi" name="durasi" placeholder="cth: Full time, Kontrak">
+          
+          <label class="title" for="gaji">Estimasi Gaji</label>
+          <input type="text" id="gaji" name="gaji" placeholder="">
+          
+          <label class="title" for="informasi">Informasi Umum</label>
+          <input type="text" id="informasi" name="informasi" placeholder="deskripsi pekerjaan, persyaratan, pertanyaan dari perusahaan, dll">
+  
+          <!-- <label class="title" for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob">
+    
+          <label class="title" for="gender">Gender:</label>x
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+    
+          <label class="title">Subscription Plan:</label>
+          <div>
+            <div>
+              <input type="radio" name="plan" id="free" value="free">
+              <label for="free">Free Tier (Free)</label>
+            </div>
+            <div>
+              <input type="radio" name="plan" id="premium" value="premium">
+              <label for="premium">Premium Tier (10$/month)</label>
+            </div>
+          </div>
+          
+          <label class="title">Agree to Terms:</label>
+          <div>
+            <label for="agree_terms">I agree to the terms and conditions</label>
+            <input type="checkbox" id="agree_terms" name="agree_terms">
+          </div>
+  
+          <div class="error">
+            <label id="error-txt">[A Sample Error Dysfunctional Error]</label>
+          </div> -->
+          
+          <button type="submit">Selesai</button>
+        </form>
+      </div>
+  </div>
+</body>
+</html>
