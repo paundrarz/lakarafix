@@ -1,0 +1,285 @@
+*,
+html{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.navbar {
+    background-color: #433AAF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+  }
+
+  .img-logo{
+    width: 50px;
+    height:fit-content;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: hsl(0, 0%, 100%);
+    min-width: 120px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .dropdown-content li {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    opacity: 1;
+    pointer-events: auto;
+    display: block;
+  }
+  .navbar ul {
+
+    list-style-type: none;
+    /* margin-left: 50px; */
+    margin-right: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+  }
+  
+  .navbar li {
+    font-weight: bold;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+  }
+
+
+  .navbar a {
+    color: rgb(145, 145, 145);
+    text-decoration: none;
+  }
+  
+  .navbar ul:last-child li {
+    background-color: #433AAF;
+  }
+
+  .navbar a:hover{
+    color: white;
+  }
+/* .img-logo{
+    width: 200%;
+}
+
+.li-navbar-gambar{
+    width: 2%;
+    list-style-type: none;
+}
+
+.container-navbar{
+    width: 100%;
+    height: 13vh;
+    background-color: #433AAF;
+}
+
+.ul-navbar{
+    z-index: 1;
+    position: flex; 
+    left: 15px;
+    display: flex;
+    height: 100px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.a-navbar{
+    color: rgb(167, 163, 163);
+    text-decoration: none;
+}
+
+.a-navbar:hover{
+    color: #FFFFFF;
+}
+
+.li-navbar{
+    list-style-type: none;
+    font-size: 20px;
+    padding: 10px;
+    margin: 30px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 120px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Tampilkan dropdown saat mengarahkan kursor mouse ke menu dropdown */
+/* } 
+
+.li-navbar-masuk{
+    border: 2px solid black;
+    list-style-type: none;
+    font-size: 20px;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.a-perusahaan{
+    text-decoration: none;
+    color: blue;
+}
+
+.li-navbar-masuk:hover{
+    background-color: #cffbf3;
+    transition: .2s ease-in-out;
+    transition-delay: .1s;
+    border-radius: 15px;
+}
+
+.ul-kanan{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    left: 100px;
+    height: 100px;
+} */
+
+body {
+    /* background-image: url('./assets/level-0.jpg'); */
+   
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color:#000000;
+    background-image: url('./models/bg-uploadpekerjaan.jpg');
+  }
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as desired */
+    z-index: -1;
+  }
+  
+  .bg {
+    height: 100%;
+    /* background-image: url('./assets/walk.gif'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: inherit  ;
+  }
+
+  
+  
+  .container {    
+    width: 600px;
+    margin: 50px auto;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    margin-bottom: 50px;
+    text-align: center;
+    color: #333;
+  }
+  
+  form {
+    display: grid;
+    grid-gap: 20px;
+  }
+  
+  label.title {
+    font-weight: bold;
+  }
+  
+  .error {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+  }
+  
+  input[type="text"],
+  select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+
+  .informasi {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    height: 500px;
+    position: relative;
+}
+
+.informasi input[type="text"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+  input[id="informasi"]{
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    height: 500px;
+    
+  }
+
+  input[id="informasi"]::placeholder{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+    height: 100%;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #393288;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3B158C;
+  }
+  
