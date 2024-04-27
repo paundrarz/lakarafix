@@ -102,6 +102,11 @@ html{
 
 /* ========================================website content======================================================= */
 
+.container-content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
 .profile {
     max-width: 600px;
     margin: 50px auto;
