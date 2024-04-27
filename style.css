@@ -60,6 +60,11 @@ html{
     margin: 10px;
 }
 
+.li-navbar:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -216,7 +221,7 @@ html{
 
 .h1-list{
     width: 100%;
-    font-size: 23px;
+    font-size: 30px;
 }
 
 .lamar{
@@ -399,4 +404,17 @@ html{
     border-radius: 5px;
     height: 30px;
     width: 200px;
+}
+
+.expend{
+    text-decoration: none;
+    color: black;
+}
+
+.container-grid-kiri-test{
+    position: relative;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
