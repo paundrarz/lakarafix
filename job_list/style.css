@@ -405,3 +405,16 @@ html{
     height: 30px;
     width: 200px;
 }
+
+.expend{
+    text-decoration: none;
+    color: black;
+}
+
+.container-grid-kiri-test{
+    position: relative;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
