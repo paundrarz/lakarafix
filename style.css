@@ -60,11 +60,6 @@ html{
     margin: 10px;
 }
 
-.li-navbar:hover{
-    transform: scale(1.1);
-    transition: 0.3s ease;
-}
-
 .dropdown-content {
     display: none;
     position: absolute;
