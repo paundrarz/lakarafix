@@ -57,8 +57,12 @@ html{
     display: block;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block; /* Tampilkan dropdown saat mengarahkan kursor mouse ke menu dropdown */
+.a-navbar-kanan:hover{
+    text-decoration: underline;
+}
+
+.a-navbar:hover{
+    text-decoration: underline;
 }
 
 .li-navbar-masuk{
