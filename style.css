@@ -74,10 +74,6 @@ html{
     display: block;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block; /* Tampilkan dropdown saat mengarahkan kursor mouse ke menu dropdown */
-}
-
 .li-navbar-masuk{
     border: 2px solid black;
     list-style-type: none;
