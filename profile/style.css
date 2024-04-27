@@ -102,25 +102,77 @@ html{
 
 /* ========================================website content======================================================= */
 
-.img-profile{
-    position: absolute;
+.profile {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
-.ul-buttons{
+.profile-header {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    padding: 25px;
-    list-style: none;
-    position: relative;
-    top: 385px;
 }
 
-.li-button{
-    list-style-type: none;
-    padding: 10px;
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
+.profile-details {
+    flex-grow: 1;
+}
 
+.username {
+    font-size: 24px;
+    margin: 0;
+}
 
+.job-title {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #666;
+}
+
+.profile-bio {
+    font-size: 16px;
+}
+
+.profile-actions {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.profile-work {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    width: 100%;
+    margin-bottom: 20px;
+}
 
