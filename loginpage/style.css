@@ -278,17 +278,15 @@ html{
 }
 
 .a-navbar{
-    font-weight: bold;
-    margin:10px;
     color: black;
     text-decoration: none;
 }
 
 .li-navbar{
     list-style-type: none;
-    font-size: 14px;
-    padding: 8px; 
-    margin: 4px; 
+    font-size: 20px;
+    padding: 20px;
+    margin: 10px;
 }
 
 .dropdown-content {
@@ -311,7 +309,6 @@ html{
 }
 
 .li-navbar-masuk{
-    border: 1px solid black;
     list-style-type: none;
     font-size: 14px; 
     padding: 8px 10px; 
