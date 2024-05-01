@@ -225,3 +225,54 @@ img{
     opacity: 50%;
     margin-bottom: 20px;
 }
+
+.container-navbar ul li a,
+.container-navbar ul li a:after,
+.container-navbar ul li a:before {
+    transition: all .5s;
+}
+.container-navbar ul li a:hover {
+    color:#E34F25;
+}
+
+/* stroke */
+.container-navbar.stroke ul li a
+{
+    position: relative;
+}
+.container-navbar.stroke ul li a:after,
+.container-navbar ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #E34F25;
+    height: 1px;
+}
+.container-navbar.stroke ul li a:hover:after {
+    width: 100%;
+}
+
+.container-navbar ul li a {
+    transition: all 1s;
+}
+
+.container-navbar ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+}
+.container-navbar ul li a:hover {
+    color: #E34F25;
+    z-index: 1;
+}
+.container-navbar ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    opacity: 1;
+}
